@@ -1,0 +1,131 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f5fa;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.app-container {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Title / Header */
+.app-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+
+  /* Gradient text */
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+  /* Vendor prefixes */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+
+  /* Needed for Safari / Chrome */
+  -webkit-text-fill-color: transparent;
+
+  /* Optional fallback for old browsers */
+  color: #6a11cb;
+}
+
+
+/* Buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.tab-buttons button {
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tab-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+.tab-buttons button.active {
+  background: linear-gradient(135deg, #6a11cb, #ff6fd8);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
+}
+
+/* Card Content */
+.content-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 25px;
+  min-height: 350px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+/* Inside card: sections */
+.section {
+  margin-bottom: 18px;
+}
+
+.section h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff6fd8, #6a11cb);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(106, 17, 203, 0.25);
+  margin-bottom: 12px;
+}
+
+.card-box p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.card-box h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Footer */
+.app-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+}

@@ -1,0 +1,79 @@
+/*
+ * Styles for Products.js - Enhanced with a vibrant, consistent aesthetic
+ */
+
+.products-container {
+  width: 100%;
+  max-width: 1600px; /* CHANGED: Increased from 1280px for a wider layout */
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Generous spacing */
+  background-color: #fcfcfc;
+  border-radius: 12px;
+}
+
+.products-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+  /* Using the exact same warm, vibrant gradient from the dashboard */
+  background: linear-gradient(135deg, #FF6F61, #DE3163, #8A2BE2);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Base style for both loading and empty messages for a unified look */
+.loading-msg,
+.empty-msg {
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #FFFDE7; /* Creamy yellow, like soft-lit parchment */
+  text-align: center;
+  font-size: 18px;
+  color: #8B4513; /* Earthy, warm brown text */
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  line-height: 1.6;
+}
+
+/* Specific border for the empty message */
+.empty-msg {
+  border: 2px dashed #FFD700; /* Gold-colored dashed border */
+}
+
+/* Differentiating the loading message with a solid border and a pulse animation */
+.loading-msg {
+  border: 2px solid #FFD700;
+  font-weight: 600;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Keyframes for the loading animation to make it feel alive */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.01);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.products-grid {
+  display: grid;
+  /* Same responsive grid setup for visual consistency */
+  /* CHANGED: Slightly increased the minimum card width to better fit the larger container */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px; /* Matching the generous gap from the dashboard */
+  padding-top: 10px;
+}

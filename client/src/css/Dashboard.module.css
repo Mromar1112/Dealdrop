@@ -1,0 +1,109 @@
+/*
+ * Styles for Dashboard.js - Enhanced with Indian-inspired colors and vibrancy
+ */
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1280px; /* Slightly wider for a more expansive feel */
+  margin: 0 auto;
+  padding: 30px; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Increased spacing between elements */
+  background-color: #ffffff; /* A very subtle off-white background */
+  border-radius: 12px;
+}
+
+.dashboard-title {
+  font-size: 32px; /* Slightly larger title */
+  font-weight: 800; /* Bolder font weight */
+  margin: 0;
+  text-align: center; /* Align title to left */
+  /* A warmer, more vibrant gradient inspired by Indian silks/jewels */
+  background: linear-gradient(135deg, #FF6F61, #DE3163, #8A2BE2); /* Coral, Crimson, Blue Violet */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Subtle text shadow for depth */
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: flex-end; /* Keeps the refresh button to the right */
+  align-items: center;
+  gap: 15px; /* Space if you add more actions later */
+}
+
+.refresh-btn {
+  padding: 14px 28px; /* Larger padding for a more substantial button */
+  border: none;
+  border-radius: 25px; /* More rounded, pill-like button */
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  /* A rich, appealing gradient for the button */
+  background: linear-gradient(45deg, #1A2980, #26D0CE); /* Deep Indigo to Cyan */
+  box-shadow: 0 8px 20px rgba(26, 41, 128, 0.25); /* More prominent shadow */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smoother transition */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and emoji */
+  letter-spacing: 0.5px; /* Slightly spaced letters */
+}
+
+.refresh-btn:hover {
+  background: linear-gradient(45deg, #26D0CE, #1A2980); /* Invert gradient on hover */
+  box-shadow: 0 10px 25px rgba(26, 41, 128, 0.4); /* Larger shadow on hover */
+  transform: translateY(-3px) scale(1.02); /* More pronounced lift and slight scale */
+}
+
+.refresh-btn:active {
+  transform: translateY(0px) scale(0.99); /* Press effect */
+  box-shadow: 0 4px 10px rgba(26, 41, 128, 0.2);
+}
+
+.empty-msg {
+  padding: 40px; /* More padding */
+  border-radius: 20px; /* Smoother corners */
+  background-color: #FFFDE7; /* Light creamy yellow, like a soft-lit parchment */
+  border: 2px dashed #FFD700; /* Gold-colored dashed border */
+  text-align: center;
+  font-size: 18px; /* Larger text */
+  color: #8B4513; /* Earthy brown text color */
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Gentle shadow */
+  line-height: 1.6; /* Better readability */
+}
+
+.empty-msg b {
+  font-weight: 700;
+  color: #4CAF50; /* A pleasant green for emphasis */
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Slightly wider min-width for cards */
+  gap: 30px; /* Increased gap between cards */
+  padding-top: 10px; /* Little extra space above the grid */
+}
+
+/* Optional: Add a subtle animation for grid items on load for a dynamic feel */
+/*
+.dashboard-grid > * {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*/
