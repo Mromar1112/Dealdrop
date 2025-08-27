@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { addProduct } from "../services/api.js";
+import { addProduct } from "../services/api.js"; // Ensure this path is correct
 import styles from "../css/AddProduct.module.css";
 
 export default function AddProduct() {
