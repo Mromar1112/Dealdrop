@@ -4,7 +4,9 @@ import Dashboard from "./pages/Dashboard.jsx";
 import "./css/App.css"; // ✅ Import the CSS file
 
 export default function App() {
-  const [tab, setTab] = useState("add");
+  // --- THIS IS THE FIX ---
+  // The default tab is now "dash" to show the dashboard on page load.
+  const [tab, setTab] = useState("dash");
 
   return (
     <div className="app-container">
