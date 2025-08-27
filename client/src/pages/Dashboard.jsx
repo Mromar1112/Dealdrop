@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getProducts } from "../services/api.js";
+import { getProducts } from "../services/api.js"; // Ensure this path is correct
 import ProductCard from "../components/ProductCard.jsx";
 import styles from "../css/Dashboard.module.css";
 
